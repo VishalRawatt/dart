@@ -1,0 +1,20 @@
+Things in dart to learn
+1. Dart uses classes but these classes are not like one we use in c++ here default class is public.
+   For ex:-
+   class Animal{
+    int? age;
+    String? name;
+   }
+   
+2. Both age and name are public and the ? after type of value is null safety.
+
+3. If a function has same name as the name of the class then it is a default constructor and the one with parameters is parameterized constructor.
+
+4. To make a variable or function private just simply add "_" before the name of the variable or function
+   For ex:-
+   class Food{
+    int? _calories;
+    String? _name;
+   }
+
+5.
