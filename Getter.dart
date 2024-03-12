@@ -1,14 +1,22 @@
-class Person {
-  String? firstName;
-  String? lastName;
+class NoteBook {
+  // Private properties
+  String? _name;
+  double? _prize;
 
-  Person(this.firstName, this.lastName);
+  // Constructor
+  NoteBook(this._name, this._prize);
 
-  // Getter and doing string concat
-  String get fullName => "$firstName $lastName";
+  // Getter method to access private property _name
+  String get name => this._name!;
+
+  // Getter method to access private property _prize
+  double get price => this._prize!;
 }
 
 void main() {
-  Person p = Person("John", "Doe");
-  print(p.fullName);
+  // Create an object of NoteBook class
+  NoteBook nb = new NoteBook("Dell", 500);
+  // Display the values of the object
+  print(nb.name);
+  print(nb.price);
 }
